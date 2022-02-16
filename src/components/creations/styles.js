@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "../styles";
 
 const StyledCreations = styled.section`
   width: 100%;
@@ -43,4 +44,8 @@ const StyledText = styled.label`
   font-family: ${(props) => props.theme.fonts.second};
 `;
 
-export { StyledCreations, StyledCard, StyledText, StyledImage };
+const StyledButton = styled(Button)`
+  margin-top: 40px;
+`;
+
+export { StyledCreations, StyledCard, StyledText, StyledImage, StyledButton };

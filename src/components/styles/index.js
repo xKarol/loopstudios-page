@@ -13,4 +13,14 @@ const StyledHeading = styled.h1`
   line-height: 1.2;
 `;
 
-export { StyledLayout, StyledHeading };
+const Button = styled.button`
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid ${(props) => props.theme.colors.black};
+  padding: 15px 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+`;
+
+export { Button, StyledLayout, StyledHeading };
