@@ -7,17 +7,18 @@ const StyledCreations = styled.section`
   flex-direction: column;
 `;
 
-const StyledCard = styled.article`
+const StyledCard = styled.a`
   width: 100%;
   margin-top: 25px;
   position: relative;
+  display: flex;
   &::before {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    bottom: 5px;
+    bottom: 0;
     background: linear-gradient(
       90deg,
       rgba(2, 0, 36, 0.4962359943977591) 20%,

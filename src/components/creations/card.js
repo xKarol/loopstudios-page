@@ -2,7 +2,7 @@ import { StyledCard, StyledText, StyledImage } from "./styles";
 
 function Card({ image, text }) {
   return (
-    <StyledCard>
+    <StyledCard href="/" aria-label={text}>
       <StyledImage src={`/images/mobile${image}`} alt={text} />
       <StyledText>{text}</StyledText>
     </StyledCard>
