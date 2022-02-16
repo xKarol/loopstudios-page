@@ -23,4 +23,15 @@ const Button = styled.button`
   font-size: 20px;
 `;
 
-export { Button, StyledLayout, StyledHeading };
+const StyledNavbar = styled.nav`
+  ol {
+    display: flex;
+    > li a {
+      color: ${(props) => props.theme.colors.white};
+      position: relative;
+      padding: 10px 0;
+    }
+  }
+`;
+
+export { Button, StyledLayout, StyledHeading, StyledNavbar };

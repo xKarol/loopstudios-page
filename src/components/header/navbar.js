@@ -1,8 +1,8 @@
-import { StyledNavbar } from "./styles";
+import { StyledHeaderNavbar } from "./styles";
 
 function Navbar() {
   return (
-    <StyledNavbar>
+    <StyledHeaderNavbar>
       <ol>
         <li>
           <a href="/">About</a>
@@ -20,7 +20,7 @@ function Navbar() {
           <a href="/">Support</a>
         </li>
       </ol>
-    </StyledNavbar>
+    </StyledHeaderNavbar>
   );
 }
 

@@ -5,6 +5,7 @@ import Header from "./components/header";
 import Layout from "./components/layout";
 import Interactive from "./components/interactive";
 import Creations from "./components/creations";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -16,8 +17,7 @@ function App() {
         <Interactive />
         <Creations />
       </Layout>
-      {/*  About Careers
-      Events Products Support © 2021 Loopstudios. All rights reserved. */}
+      <Footer />
     </Theme>
   );
 }
