@@ -2,7 +2,7 @@ import { StyledHamburger } from "./styles";
 
 function Hamburger() {
   return (
-    <StyledHamburger>
+    <StyledHamburger type="button" aria-label="hamburger-menu">
       <span />
       <span />
       <span />

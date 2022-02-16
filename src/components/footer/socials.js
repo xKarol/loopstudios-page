@@ -9,10 +9,18 @@ import {
 function Socials() {
   return (
     <StyledSocials>
-      <FaFacebookSquare />
-      <FaTwitter />
-      <FaPinterest />
-      <FaInstagram />
+      <a href="/">
+        <FaFacebookSquare />
+      </a>
+      <a href="/">
+        <FaTwitter />
+      </a>
+      <a href="/">
+        <FaPinterest />
+      </a>
+      <a href="/">
+        <FaInstagram />
+      </a>
     </StyledSocials>
   );
 }

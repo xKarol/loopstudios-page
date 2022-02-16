@@ -27,6 +27,9 @@ const StyledFooterNavbar = styled(StyledNavbar)`
 const StyledSocials = styled.section`
   display: flex;
   font-size: 35px;
+  a {
+    color: ${(props) => props.theme.colors.white};
+  }
   > * {
     margin-right: 15px;
   }

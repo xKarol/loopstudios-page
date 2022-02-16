@@ -11,7 +11,9 @@ const StyledHeader = styled.header`
   justify-content: space-between;
 `;
 
-const StyledHamburger = styled.div`
+const StyledHamburger = styled.button`
+  background: none;
+  border: none;
   width: 24px;
   height: 20px;
   position: relative;
