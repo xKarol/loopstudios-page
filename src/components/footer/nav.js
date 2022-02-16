@@ -1,24 +1,15 @@
+import NavbarItem from "../navbar-item";
 import { StyledFooterNavbar } from "./styles";
 
 function Nav() {
   return (
     <StyledFooterNavbar>
       <ol>
-        <li>
-          <a href="/">About</a>
-        </li>
-        <li>
-          <a href="/">Careers</a>
-        </li>
-        <li>
-          <a href="/">Events</a>
-        </li>
-        <li>
-          <a href="/">Products</a>
-        </li>
-        <li>
-          <a href="/">Support</a>
-        </li>
+        <NavbarItem href="/">About</NavbarItem>
+        <NavbarItem href="/">Careers</NavbarItem>
+        <NavbarItem href="/">Events</NavbarItem>
+        <NavbarItem href="/">Products</NavbarItem>
+        <NavbarItem href="/">Support</NavbarItem>
       </ol>
     </StyledFooterNavbar>
   );

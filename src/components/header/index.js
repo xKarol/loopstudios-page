@@ -1,5 +1,4 @@
 import Logo from "../logo";
-import Hamburger from "./hamburger";
 import Navbar from "./navbar";
 import { StyledHeader } from "./styles";
 
@@ -8,7 +7,6 @@ function Header() {
     <StyledHeader>
       <Logo />
       <Navbar />
-      <Hamburger />
     </StyledHeader>
   );
 }

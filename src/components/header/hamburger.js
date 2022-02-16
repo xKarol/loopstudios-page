@@ -1,8 +1,13 @@
 import { StyledHamburger } from "./styles";
 
-function Hamburger() {
+function Hamburger({ setActive, active }) {
   return (
-    <StyledHamburger type="button" aria-label="hamburger-menu">
+    <StyledHamburger
+      className={active ? "active" : ""}
+      onClick={() => setActive(!active)}
+      type="button"
+      aria-label="hamburger-menu"
+    >
       <span />
       <span />
       <span />

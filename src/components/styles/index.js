@@ -34,4 +34,8 @@ const StyledNavbar = styled.nav`
   }
 `;
 
-export { Button, StyledLayout, StyledHeading, StyledNavbar };
+const StyledLogo = styled.a`
+  z-index: 100;
+`;
+
+export { Button, StyledLayout, StyledHeading, StyledNavbar, StyledLogo };
