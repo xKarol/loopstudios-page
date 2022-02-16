@@ -1,4 +1,5 @@
-import { StyledHeading, StyledText } from "./styles";
+import { StyledText } from "./styles";
+import { StyledHeading } from "../styles";
 
 function Text() {
   return (

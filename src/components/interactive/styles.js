@@ -18,15 +18,6 @@ const StyledInteractive = styled.section`
   margin-bottom: 80px;
 `;
 
-const StyledHeading = styled.h1`
-  font-family: ${(props) => props.theme.fonts.second};
-  margin: 20px 0;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 35px;
-  line-height: 1.2;
-`;
-
 const StyledText = styled.p`
   text-align: center;
   color: ${(props) => props.theme.colors.darkGray};
@@ -34,4 +25,4 @@ const StyledText = styled.p`
   line-height: 1.5;
 `;
 
-export { StyledThumbnail, StyledInteractive, StyledHeading, StyledText };
+export { StyledThumbnail, StyledInteractive, StyledText };

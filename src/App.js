@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import Header from "./components/header";
 import Layout from "./components/layout";
 import Interactive from "./components/interactive";
+import Creations from "./components/creations";
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
       <Header />
       <Layout>
         <Interactive />
+        <Creations />
       </Layout>
-      {/* Our creations See all Deep earth Night arcade Soccer team VR The grid From up
-      above VR Pocket borealis The curiosity Make it fisheye About Careers
+      {/*  About Careers
       Events Products Support © 2021 Loopstudios. All rights reserved. */}
     </Theme>
   );
