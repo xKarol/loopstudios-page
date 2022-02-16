@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { StyledNavbar } from "../styles";
+import { device } from "../styles/breakpoints";
 
 const StyledHeader = styled.header`
   position: absolute;
@@ -9,6 +10,10 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media ${device.tablet} {
+    left: 100px;
+    right: 100px;
+  }
 `;
 
 const StyledHamburger = styled.button`
@@ -21,6 +26,12 @@ const StyledHamburger = styled.button`
   transition: 0.5s ease-in-out;
   cursor: pointer;
   z-index: 100;
+  @media ${device.tablet} {
+    display: none;
+  }
+  &.active {
+    display: unset;
+  }
   > span {
     display: block;
     position: absolute;
@@ -80,6 +91,9 @@ const NavbarFadeIn = keyframes`
 const StyledHeaderNavbar = styled(StyledNavbar)`
   display: none;
   z-index: 50;
+  @media ${device.tablet} {
+    display: unset;
+  }
   &.active {
     display: unset;
     position: fixed;

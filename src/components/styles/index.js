@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledLayout = styled.main`
-  padding: 80px 25px;
+  padding: 80px 5vw;
 `;
 
 const StyledHeading = styled.h1`

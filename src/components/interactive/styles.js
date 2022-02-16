@@ -1,13 +1,17 @@
 import styled from "styled-components";
-import thumbnailImage from "../../assets/mobile/image-interactive.jpg";
+import { device } from "../styles/breakpoints";
 
 const StyledThumbnail = styled.div`
   width: 100%;
   height: 250px;
-  background-image: url(${thumbnailImage});
   background-size: cover;
   background-color: #fafafa;
+  background-repeat: no-repeat;
   margin-bottom: 25px;
+  background-image: url("/images/mobile/image-interactive.jpg");
+  @media ${device.tablet} {
+    background-image: url("/images/desktop/image-interactive.jpg");
+  }
 `;
 
 const StyledInteractive = styled.section`
