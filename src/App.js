@@ -2,6 +2,8 @@ import GlobalStyles from "./components/styles/global-styles";
 import Theme from "./components/styles/theme";
 import Hero from "./components/hero";
 import Header from "./components/header";
+import Layout from "./components/layout";
+import Interactive from "./components/interactive";
 
 function App() {
   return (
@@ -9,12 +11,10 @@ function App() {
       <GlobalStyles />
       <Hero />
       <Header />
-      {/* 
-      The leader in interactive VR Founded in 2011, Loopstudios has been
-      producing world-class virtual reality projects for some of the best
-      companies around the globe. Our award-winning creations have transformed
-      businesses through digital experiences that bind to their brand. Our
-      creations See all Deep earth Night arcade Soccer team VR The grid From up
+      <Layout>
+        <Interactive />
+      </Layout>
+      {/* Our creations See all Deep earth Night arcade Soccer team VR The grid From up
       above VR Pocket borealis The curiosity Make it fisheye About Careers
       Events Products Support © 2021 Loopstudios. All rights reserved. */}
     </Theme>
