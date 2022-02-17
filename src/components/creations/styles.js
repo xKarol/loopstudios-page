@@ -22,6 +22,8 @@ const CardsList = styled.section`
 `;
 
 const StyledCard = styled.a`
+  min-width: 312px;
+  min-height: 150px;
   width: 100%;
   position: relative;
   display: flex;
@@ -30,7 +32,9 @@ const StyledCard = styled.a`
     opacity: 0.25;
   }
   @media ${device.tablet} {
-    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 439.45px;
   }
   &::before {
     content: "";
@@ -68,6 +72,7 @@ const StyledText = styled.label`
   font-size: 30px;
   max-width: 50%;
   font-family: ${(props) => props.theme.fonts.second};
+  pointer-events: none;
 `;
 
 const StyledButton = styled(Button)`

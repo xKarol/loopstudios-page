@@ -3,6 +3,7 @@ import styled from "styled-components";
 const StyledLayout = styled.main`
   padding: 150px 10vw;
   margin: 0 auto;
+  max-width: 1600px;
 `;
 
 const StyledHeading = styled.h1`
