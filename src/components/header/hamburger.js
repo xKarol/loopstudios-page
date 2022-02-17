@@ -1,10 +1,10 @@
 import { StyledHamburger } from "./styles";
 
-function Hamburger({ setActive, active }) {
+function Hamburger({ setHamburger, hamburger }) {
   return (
     <StyledHamburger
-      className={active ? "active" : ""}
-      onClick={() => setActive(!active)}
+      className={hamburger ? "active" : ""}
+      onClick={() => setHamburger(!hamburger)}
       type="button"
       aria-label="hamburger-menu"
     >

@@ -12,6 +12,9 @@ const GlobalStyles = createGlobalStyle`
         font-size: 15px;
         font-weight: 400;
         font-family: "Alata", sans-serif;
+        &.no-scroll{
+            overflow: hidden;
+        }
     }
     ol, ul {
         list-style: none;

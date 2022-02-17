@@ -99,7 +99,7 @@ const StyledHeaderNavbar = styled(StyledNavbar)`
     top: 0;
     bottom: 0;
     background-color: ${(props) => props.theme.colors.black};
-    padding: 0 25px;
+    padding: 0 10vw;
     padding-top: 250px;
     animation: ${NavbarFadeIn} 400ms ease-in-out;
     > ol {

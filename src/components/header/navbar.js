@@ -1,13 +1,22 @@
 import { StyledHeaderNavbar } from "./styles";
 import Hamburger from "./hamburger";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavbarItem from "../navbar-item";
 
 function Navbar() {
-  const [active, setActive] = useState(false);
+  const [hamburger, setHamburger] = useState(false);
+
+  useEffect(() => {
+    if (hamburger) {
+      window.scrollTo(0, 0);
+      document.body.classList.add("no-scroll");
+    }
+    return () => document.body.classList.remove("no-scroll");
+  }, [hamburger]);
+
   return (
     <>
-      <StyledHeaderNavbar className={active ? "active" : ""}>
+      <StyledHeaderNavbar className={hamburger ? "active" : ""}>
         <ol>
           <NavbarItem href="/">About</NavbarItem>
           <NavbarItem href="/">Careers</NavbarItem>
@@ -16,7 +25,7 @@ function Navbar() {
           <NavbarItem href="/">Support</NavbarItem>
         </ol>
       </StyledHeaderNavbar>
-      <Hamburger active={active} setActive={setActive} />
+      <Hamburger hamburger={hamburger} setHamburger={setHamburger} />
     </>
   );
 }
