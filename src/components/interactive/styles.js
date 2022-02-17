@@ -24,11 +24,8 @@ const StyledInteractive = styled.section`
   position: relative;
 `;
 
-const StyledText = styled.p`
+const StyledText = styled.section`
   text-align: center;
-  color: ${(props) => props.theme.colors.darkGray};
-  font-size: 18px;
-  line-height: 1.5;
   background: ${(props) => props.theme.colors.white};
   padding: 25px;
   @media ${device.tablet} {
@@ -39,6 +36,12 @@ const StyledText = styled.p`
     max-width: 500px;
     text-align: left;
   }
+`;
+
+const StyledParagraph = styled.p`
+  color: ${(props) => props.theme.colors.darkGray};
+  line-height: 1.5;
+  font-size: 18px;
 `;
 
 const StyledInteractiveHeading = styled(StyledHeading)`
@@ -54,4 +57,5 @@ export {
   StyledInteractive,
   StyledText,
   StyledInteractiveHeading,
+  StyledParagraph,
 };

@@ -11,16 +11,16 @@ function Socials() {
   return (
     <StyledSocials>
       <ol>
-        <NavbarItem href="/">
+        <NavbarItem href="/" aria-label="facebook">
           <FaFacebookSquare />
         </NavbarItem>
-        <NavbarItem href="/">
+        <NavbarItem href="/" aria-label="twitter">
           <FaTwitter />
         </NavbarItem>
-        <NavbarItem href="/">
+        <NavbarItem href="/" aria-label="pinterest">
           <FaPinterest />
         </NavbarItem>
-        <NavbarItem href="/">
+        <NavbarItem href="/" aria-label="instagram">
           <FaInstagram />
         </NavbarItem>
       </ol>

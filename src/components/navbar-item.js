@@ -1,7 +1,7 @@
-function NavbarItem({ href, children }) {
+function NavbarItem(props) {
   return (
     <li>
-      <a href={href}>{children}</a>
+      <a {...props}>{props.children}</a>
     </li>
   );
 }
