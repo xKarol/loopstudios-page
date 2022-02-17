@@ -5,15 +5,12 @@ import { device } from "../styles/breakpoints";
 const StyledHeader = styled.header`
   position: absolute;
   top: 50px;
-  left: 25px;
-  right: 25px;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media ${device.tablet} {
-    left: 100px;
-    right: 100px;
-  }
+  padding: 0 10vw;
 `;
 
 const StyledHamburger = styled.button`

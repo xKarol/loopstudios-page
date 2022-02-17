@@ -1,7 +1,11 @@
-import { StyledHeading } from "../styles";
-
+import { StyledCreationsHeading } from "./styles";
+import { Button } from "../styles";
 function Heading() {
-  return <StyledHeading>Our creations</StyledHeading>;
+  return (
+    <StyledCreationsHeading>
+      Our creations <Button>See All</Button>
+    </StyledCreationsHeading>
+  );
 }
 
 export default Heading;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button } from "../styles";
+import { Button, StyledHeading } from "../styles";
 import { device } from "../styles/breakpoints";
 
 const StyledCreations = styled.section`
@@ -11,9 +11,8 @@ const StyledCreations = styled.section`
 
 const CardsList = styled.section`
   display: flex;
-  align-items: center;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   gap: 25px;
   @media ${device.tablet} {
     align-items: unset;
@@ -73,10 +72,31 @@ const StyledText = styled.label`
 
 const StyledButton = styled(Button)`
   margin-top: 40px;
+  @media ${device.tablet} {
+    display: none;
+  }
+`;
+
+const StyledCreationsHeading = styled(StyledHeading)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 75px;
+  @media ${device.tablet} {
+    justify-content: space-between;
+  }
+  > :first-child {
+    display: none;
+    @media ${device.tablet} {
+      display: unset;
+    }
+  }
 `;
 
 export {
   StyledCreations,
+  StyledCreationsHeading,
   StyledCard,
   StyledText,
   StyledImage,

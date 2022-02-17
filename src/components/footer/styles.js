@@ -6,7 +6,7 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 5vw;
+  padding: 50px 10vw;
   background-color: ${(props) => props.theme.colors.black};
   @media ${device.tablet} {
     flex-direction: row;
@@ -18,6 +18,10 @@ const StyledFooter = styled.footer`
 `;
 
 const StyledFooterNavbar = styled(StyledNavbar)`
+  margin-top: 25px;
+  @media ${device.tablet} {
+    margin-top: 0;
+  }
   > ol {
     flex-direction: column;
     letter-spacing: 1px;
@@ -52,6 +56,11 @@ const StyledSocials = styled(StyledNavbar)`
 
 const StyledCopyright = styled.span`
   color: ${(props) => props.theme.colors.veryDarkGray};
+  text-align: right;
+  margin-top: 15px;
+  @media ${device.tablet} {
+    margin-top: 0;
+  }
 `;
 
 const Box = styled.div`
@@ -61,14 +70,10 @@ const Box = styled.div`
   &:first-child {
     margin-bottom: 40px;
   }
-  > :first-child {
-    //childs
-    margin-bottom: 20px;
-  }
 
   @media ${device.tablet} {
     margin-bottom: 0;
-    height: 100px;
+    height: 75px;
     justify-content: space-between;
     align-items: flex-end;
     &:first-child {

@@ -8,11 +8,10 @@ const StyledThumbnail = styled.div`
   background-size: cover;
   background-color: #fafafa;
   background-repeat: no-repeat;
-  margin-bottom: 25px;
   background-image: url("/images/mobile/image-interactive.jpg");
   @media ${device.tablet} {
     height: 500px;
-    width: 700px;
+    max-width: 700px;
     background-image: url("/images/desktop/image-interactive.jpg");
   }
 `;
@@ -20,13 +19,9 @@ const StyledThumbnail = styled.div`
 const StyledInteractive = styled.section`
   width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
   margin-bottom: 80px;
   position: relative;
-  @media ${device.tablet} {
-    align-items: unset;
-  }
 `;
 
 const StyledText = styled.p`
@@ -35,17 +30,20 @@ const StyledText = styled.p`
   font-size: 18px;
   line-height: 1.5;
   background: ${(props) => props.theme.colors.white};
+  padding: 25px;
   @media ${device.tablet} {
     padding: 100px 0 0 100px;
     position: absolute;
-    right: -25px;
-    bottom: 25px;
+    right: 0;
+    bottom: 0;
     max-width: 500px;
     text-align: left;
   }
 `;
 
 const StyledInteractiveHeading = styled(StyledHeading)`
+  margin: 0;
+  margin-bottom: 10px;
   @media ${device.tablet} {
     text-align: left;
   }

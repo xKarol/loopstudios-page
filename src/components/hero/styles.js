@@ -4,6 +4,8 @@ import { device } from "../styles/breakpoints";
 export const Background = styled.section`
   position: relative;
   height: 100vh;
+  min-height: 550px;
+  max-height: 650px;
   width: 100%;
   background-color: #fafafa;
   background-size: cover;
@@ -31,8 +33,7 @@ export const Text = styled.h1`
   @media ${device.tablet} {
     max-width: 500px;
     font-size: 60px;
-    position: absolute;
-    left: 100px;
-    bottom: 100px;
+    margin-left: 10vw;
+    margin-bottom: 10vw;
   }
 `;
