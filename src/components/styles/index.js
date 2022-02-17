@@ -1,16 +1,20 @@
 import styled from "styled-components";
 
 const StyledLayout = styled.main`
-  padding: 80px 5vw;
+  padding: 150px 5vw;
+  max-width: 1212px;
+  margin: 0 auto;
 `;
 
 const StyledHeading = styled.h1`
   font-family: ${(props) => props.theme.fonts.second};
+  color: ${(props) => props.theme.colors.black};
   margin: 20px 0;
   text-transform: uppercase;
   text-align: center;
   font-size: 35px;
   line-height: 1.2;
+  font-weight: 400;
 `;
 
 const Button = styled.button`
