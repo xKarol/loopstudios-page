@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../styles";
+import { device } from "../styles/breakpoints";
 
 const StyledCreations = styled.section`
   width: 100%;
@@ -8,11 +9,26 @@ const StyledCreations = styled.section`
   flex-direction: column;
 `;
 
+const CardsList = styled.section`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  @media ${device.tablet} {
+    align-items: unset;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+`;
+
 const StyledCard = styled.a`
   width: 100%;
-  margin-top: 25px;
   position: relative;
   display: flex;
+  @media ${device.tablet} {
+    width: 250px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -22,7 +38,7 @@ const StyledCard = styled.a`
     bottom: 0;
     background: linear-gradient(
       90deg,
-      rgba(2, 0, 36, 0.4962359943977591) 20%,
+      rgba(2, 0, 36, 0.5) 20%,
       rgba(255, 255, 255, 0) 50%
     );
   }
@@ -48,4 +64,11 @@ const StyledButton = styled(Button)`
   margin-top: 40px;
 `;
 
-export { StyledCreations, StyledCard, StyledText, StyledImage, StyledButton };
+export {
+  StyledCreations,
+  StyledCard,
+  StyledText,
+  StyledImage,
+  StyledButton,
+  CardsList,
+};
