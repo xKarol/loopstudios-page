@@ -26,6 +26,10 @@ const StyledCard = styled.a`
   width: 100%;
   position: relative;
   display: flex;
+  transition: opacity 200ms ease-in-out;
+  &:hover {
+    opacity: 0.25;
+  }
   @media ${device.tablet} {
     width: 250px;
   }
@@ -41,6 +45,13 @@ const StyledCard = styled.a`
       rgba(2, 0, 36, 0.5) 20%,
       rgba(255, 255, 255, 0) 50%
     );
+    @media ${device.tablet} {
+      background: linear-gradient(
+        0deg,
+        rgba(2, 0, 36, 0.5) 20%,
+        rgba(255, 255, 255, 0) 50%
+      );
+    }
   }
 `;
 

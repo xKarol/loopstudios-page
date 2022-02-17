@@ -120,25 +120,6 @@ const StyledHeaderNavbar = styled(StyledNavbar)`
     &:not(:last-child) {
       margin-right: 25px;
     }
-    a {
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 2px;
-        background-color: ${(props) => props.theme.colors.white};
-        opacity: 0;
-        transition: all 200ms ease-in-out;
-      }
-      &:hover::after {
-        opacity: 1;
-        left: 0;
-        right: 0;
-        transform: unset;
-      }
-    }
   }
 `;
 

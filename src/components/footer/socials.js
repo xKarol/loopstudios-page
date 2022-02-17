@@ -5,22 +5,25 @@ import {
   FaPinterest,
   FaInstagram,
 } from "react-icons/fa";
+import NavbarItem from "../navbar-item";
 
 function Socials() {
   return (
     <StyledSocials>
-      <a href="/">
-        <FaFacebookSquare />
-      </a>
-      <a href="/">
-        <FaTwitter />
-      </a>
-      <a href="/">
-        <FaPinterest />
-      </a>
-      <a href="/">
-        <FaInstagram />
-      </a>
+      <ol>
+        <NavbarItem href="/">
+          <FaFacebookSquare />
+        </NavbarItem>
+        <NavbarItem href="/">
+          <FaTwitter />
+        </NavbarItem>
+        <NavbarItem href="/">
+          <FaPinterest />
+        </NavbarItem>
+        <NavbarItem href="/">
+          <FaInstagram />
+        </NavbarItem>
+      </ol>
     </StyledSocials>
   );
 }
