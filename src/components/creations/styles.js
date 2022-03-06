@@ -63,11 +63,12 @@ const StyledText = styled.label`
   position: absolute;
   bottom: 25px;
   left: 25px;
+  right: 25px;
   text-transform: uppercase;
   font-size: 30px;
-  max-width: 50%;
   font-family: ${(props) => props.theme.fonts.second};
   pointer-events: none;
+  max-width: 170px;
 `;
 
 const StyledButton = styled(Button)`
