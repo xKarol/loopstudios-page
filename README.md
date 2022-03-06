@@ -14,7 +14,7 @@
 </ol>
 
 ## About the Project
-This project is a landing page. The website is responsive to mobile devices and desktops.
+This project contains only landing page. The website is responsive for mobile devices and desktops.
 
 ## Built With
 * <a href="https://reactjs.org/">React JS</a>
