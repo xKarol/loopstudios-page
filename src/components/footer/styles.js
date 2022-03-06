@@ -58,6 +58,7 @@ const StyledCopyright = styled.span`
   color: ${(props) => props.theme.colors.veryDarkGray};
   text-align: right;
   margin-top: 15px;
+  margin-left: 25px;
   @media ${device.md} {
     margin-top: 0;
   }

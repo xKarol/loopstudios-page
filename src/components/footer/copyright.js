@@ -1,8 +1,11 @@
 import { StyledCopyright } from "./styles";
 
 function Copyright() {
+  const year = new Date().getFullYear();
   return (
-    <StyledCopyright>© 2021 Loopstudios. All rights reserved.</StyledCopyright>
+    <StyledCopyright>
+      © {year} Loopstudios. All rights reserved.
+    </StyledCopyright>
   );
 }
 
