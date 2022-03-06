@@ -23,7 +23,7 @@ const StyledHamburger = styled.button`
   transition: 0.5s ease-in-out;
   cursor: pointer;
   z-index: 100;
-  @media ${device.tablet} {
+  @media ${device.md} {
     display: none;
   }
   &.active {
@@ -88,7 +88,7 @@ const NavbarFadeIn = keyframes`
 const StyledHeaderNavbar = styled(StyledNavbar)`
   display: none;
   z-index: 50;
-  @media ${device.tablet} {
+  @media ${device.md} {
     display: unset;
   }
   &.active {

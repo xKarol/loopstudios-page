@@ -12,7 +12,7 @@ export const Background = styled.section`
   display: flex;
   padding: 0 10vw;
   background-image: url("/images/mobile/image-hero.jpg");
-  @media ${device.tablet} {
+  @media ${device.md} {
     padding-bottom: 10vw;
     background-image: url("/images/desktop/image-hero.jpg");
   }
@@ -36,7 +36,7 @@ export const Text = styled.h1`
     font-size: 30px;
   }
 
-  @media ${device.tablet} {
+  @media ${device.md} {
     margin: 0;
     max-width: 500px;
     font-size: 60px;

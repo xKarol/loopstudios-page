@@ -1,10 +1,12 @@
 export const deviceWidth = {
-  mobile: 350,
-  tablet: 768,
-  desktop: 1080,
+  sm: 640,
+  md: 768,
+  lg: 1024,
+  xlg: 1400,
 };
 export const device = {
-  mobile: `(min-width: ${deviceWidth.mobile}px)`,
-  tablet: `(min-width: ${deviceWidth.tablet}px)`,
-  desktop: `(min-width: ${deviceWidth.desktop}px)`,
+  sm: `(min-width: ${deviceWidth.sm}px)`,
+  md: `(min-width: ${deviceWidth.md}px)`,
+  lg: `(min-width: ${deviceWidth.lg}px)`,
+  xlg: `(min-width: ${deviceWidth.xlg}px)`,
 };

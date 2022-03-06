@@ -9,7 +9,7 @@ const StyledThumbnail = styled.div`
   background-color: #fafafa;
   background-repeat: no-repeat;
   background-image: url("/images/mobile/image-interactive.jpg");
-  @media ${device.tablet} {
+  @media ${device.md} {
     height: 500px;
     max-width: 700px;
     background-image: url("/images/desktop/image-interactive.jpg");
@@ -28,7 +28,7 @@ const StyledText = styled.section`
   text-align: center;
   background: ${(props) => props.theme.colors.white};
   padding: 25px;
-  @media ${device.tablet} {
+  @media ${device.md} {
     padding: 100px 0 0 100px;
     position: absolute;
     right: 0;
@@ -47,7 +47,7 @@ const StyledParagraph = styled.p`
 const StyledInteractiveHeading = styled(StyledHeading)`
   margin: 0;
   margin-bottom: 10px;
-  @media ${device.tablet} {
+  @media ${device.md} {
     text-align: left;
   }
 `;

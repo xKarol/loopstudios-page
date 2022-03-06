@@ -11,30 +11,25 @@ const StyledCreations = styled.section`
 
 const CardsList = styled.section`
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 25px;
-  @media ${device.tablet} {
-    align-items: unset;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 `;
 
 const StyledCard = styled.a`
-  min-width: 312px;
-  min-height: 150px;
-  width: 100%;
   position: relative;
   display: flex;
   transition: opacity 200ms ease-in-out;
   &:hover {
     opacity: 0.25;
   }
-  @media ${device.tablet} {
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 439.45px;
+  @media ${device.md} {
+    width: calc((100% - 25px) / 2);
+  }
+  @media ${device.lg} {
+    width: calc((100% - 50px) / 3);
+  }
+  @media ${device.xlg} {
+    width: calc((100% - 75px) / 4);
   }
   &::before {
     content: "";
@@ -48,7 +43,7 @@ const StyledCard = styled.a`
       rgba(2, 0, 36, 0.5) 20%,
       rgba(255, 255, 255, 0) 50%
     );
-    @media ${device.tablet} {
+    @media ${device.md} {
       background: linear-gradient(
         0deg,
         rgba(2, 0, 36, 0.5) 20%,
@@ -77,7 +72,7 @@ const StyledText = styled.label`
 
 const StyledButton = styled(Button)`
   margin-top: 40px;
-  @media ${device.tablet} {
+  @media ${device.md} {
     display: none;
   }
 `;
@@ -88,12 +83,12 @@ const StyledCreationsHeading = styled(StyledHeading)`
   justify-content: center;
   width: 100%;
   margin-bottom: 75px;
-  @media ${device.tablet} {
+  @media ${device.md} {
     justify-content: space-between;
   }
   > :first-child {
     display: none;
-    @media ${device.tablet} {
+    @media ${device.md} {
       display: unset;
     }
   }

@@ -8,7 +8,7 @@ function Card({ image, text }) {
     <StyledCard href="/" aria-label={text}>
       <StyledImage
         src={`/images/${
-          width >= deviceWidth.tablet ? "desktop" : "mobile"
+          width >= deviceWidth.md ? "desktop" : "mobile"
         }${image}`}
         alt={text}
       />

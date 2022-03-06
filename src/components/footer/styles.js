@@ -8,7 +8,7 @@ const StyledFooter = styled.footer`
   align-items: center;
   padding: 50px 10vw;
   background-color: ${(props) => props.theme.colors.black};
-  @media ${device.tablet} {
+  @media ${device.md} {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -19,19 +19,19 @@ const StyledFooter = styled.footer`
 
 const StyledFooterNavbar = styled(StyledNavbar)`
   margin-top: 25px;
-  @media ${device.tablet} {
+  @media ${device.md} {
     margin-top: 0;
   }
   > ol {
     flex-direction: column;
     letter-spacing: 1px;
     align-items: center;
-    @media ${device.tablet} {
+    @media ${device.md} {
       flex-direction: row;
     }
     > li:not(:last-child) {
       margin-bottom: 25px;
-      @media ${device.tablet} {
+      @media ${device.md} {
         margin-bottom: 0;
         margin-right: 25px;
       }
@@ -58,7 +58,7 @@ const StyledCopyright = styled.span`
   color: ${(props) => props.theme.colors.veryDarkGray};
   text-align: right;
   margin-top: 15px;
-  @media ${device.tablet} {
+  @media ${device.md} {
     margin-top: 0;
   }
 `;
@@ -71,7 +71,7 @@ const Box = styled.div`
     margin-bottom: 40px;
   }
 
-  @media ${device.tablet} {
+  @media ${device.md} {
     margin-bottom: 0;
     height: 75px;
     justify-content: space-between;
